@@ -41,11 +41,16 @@ namespace MatchGame
             foreach (TextBlock textBlock in mainGrid.Children.OfType<TextBlock>())
             {
                 int index = random.Next(animalEmoji.Count);
-                System.Diagnostics.Debug.WriteLine(index);
+                //System.Diagnostics.Debug.WriteLine(index);
                 string nextEmoji = animalEmoji[index];
                 textBlock.Text = nextEmoji;
                 animalEmoji.RemoveAt(index);
             }
+        }
+
+        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }
