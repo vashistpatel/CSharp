@@ -36,6 +36,8 @@ namespace MatchGame
             {
                 timer.Stop();
                 timeTextBlock.Text = timeTextBlock.Text + " - Play again?";
+
+                SetupGame() ;
             }
         }
 
